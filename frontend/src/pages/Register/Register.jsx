@@ -15,7 +15,7 @@ export default function Register() {
     const submitHandler = async(e) => {
         // Stops the page from refreshing on click of button
         e.preventDefault();
-        console.log(passAgainRef.current.value,passRef.current.value)
+        
         if(passAgainRef.current.value != passRef.current.value){
             passAgainRef.current.setCustomValidity("Passwords don't match!");
         }

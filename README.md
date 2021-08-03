@@ -13,3 +13,5 @@
         *   Go to http://localhost:3000/login in a new browser.
         *   Enter Email : alex@gmail.com, Password : ALEX56
         *   Hit the login button.
+
+* For connection related requirements please contact the developer.
