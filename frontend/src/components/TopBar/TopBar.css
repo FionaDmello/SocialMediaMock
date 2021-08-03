@@ -1,0 +1,107 @@
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: #36013f;
+    /* all items in same row */
+    display: flex; 
+    align-items: center;
+    /* Fixes the top bar to the top. Won't move on scrolling */
+    position: sticky;
+    top:0;
+    /* Ensures topbar always stays above everything */
+    z-index: 999;
+}
+
+/* Container divided into 12 parts- 3 left, 5 center, 4 right*/
+.topbarLeft{
+    flex:3;
+}
+
+.logo{
+    font-size: 24px;
+    margin-left:20px;
+    font-weight: bold;
+    cursor:pointer;
+    color: white;
+}
+
+.topbarCenter{
+    flex: 5
+}
+
+.searchbar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display:flex;
+    align-items: center;
+}
+
+.searchbaricon{
+    font-size:20px !important; 
+    margin-left: 10px
+}
+
+.searchinput{
+    border:none;
+    width: 80%;
+}
+
+/* To not loose focus on hovering over search input and make it look seamless with the applied css */
+.searchinput:focus{
+    outline: none
+}
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white
+}
+.topbarlinks{
+    display:flex;
+}
+.topbarlink{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.topbaricons{
+    display: flex;
+}
+
+.topbariconitem{
+    margin-right: 15px;
+    cursor:pointer;
+    /* As badges will be absolute, we can position them according to this div */
+    position: relative;
+    display:flex;
+    align-items: space-around;
+}
+
+.topbariconbadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px; 
+    right: -5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topbarimg{
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    object-fit: cover;
+    cursor: pointer
+
+}

@@ -1,0 +1,56 @@
+.profileContainer{
+    display:flex
+}
+
+.profileRight{
+    flex:9
+}
+
+.profileCover{
+    height: 320px;
+    position: relative;
+}
+
+.profileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profileUserImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position:absolute;
+    /* To put image at center do the following, in case of relative/absolute positioning like here */
+    left:0;
+    right:0;
+    margin:auto;
+    /* ---- */
+    /* Resets the centered img 150 px downwards */
+    top: 150px;
+    border: 3px solid white;
+}
+
+.profileInfo{
+    display: flex;
+    /* Arranges items along a column */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfoName{
+    font-size: 22px;
+}
+
+.profileInfoDesc{
+    font-style: 18px;
+    font-weight: normal;
+}
+
+.profileRightBottom{
+    display: flex;
+    background-color: whitesmoke;
+}
